@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f6f6f6;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.job-title {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 11rem;
   display: flex;
-  flex-direction: column;
+  color: #292929;
+  /* justify-content: center; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-height: 11rem;
+}
+.home-bottom-row {
+  margin-top: 5rem;
+}
+.title-border {
+  color: black;
+  -webkit-text-fill-color: #f6f6f6;
+  -webkit-text-stroke: 2px #292929;
+  font-weight: 500;
+}
+.name-title {
+  font-family: Poppins;
+  font-weight: 800;
+  font-size: 2.8rem;
+  display: flex;
+  justify-content: right;
+  color: #292929;
 }
 
-.App-link {
-  color: #61dafb;
+.background-margin {
+  /* padding: 4rem 5rem; */
+  padding: 4rem 8rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-contact {
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.circle {
+  width: 13rem;
+  height: 13rem;
+  border: 6px solid #ffaf52;
+  border-radius: 50%;
+}
+
+.contact-container {
+  margin-bottom: 1.5rem;
+  padding: 0 0.5rem 0.5rem 0;
+  border-bottom: 5px solid #292929;
+  /* border-bottom-right-radius: 10px;   */
+}
+
+.home-anchor
+  .ant-anchor-wrapper
+  .ant-anchor
+  .ant-anchor-link-active
+  > .ant-anchor-link-title {
+  font-size: 1.5rem;
+  color: #292929;
+}
+
+.home-anchor .ant-anchor-wrapper .ant-anchor {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #292929;
+}
+
+.home-anchor .ant-anchor::before {
+  border-inline-start: none !important;
+}
+
+.home-anchor .ant-anchor .ant-anchor-ink {
+  background-color: transparent !important;
+}
+
+.about-main-header {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 5.7rem;
+  display: flex;
+  color: #292929;
+  /* justify-content: center; */
+  align-items: center;
+  max-height: 9rem;
+}
+
+.about-job-header {
+  font-family: Poppins;
+  /* font-weight: 600; */
+  font-size: 4.5rem;
+  display: flex;
+  color: #ffaf52;
+  /* justify-content: center; */
+  align-items: center;
+  max-height: 8rem;
+}
+
+.about-header {
+  display: flex;
+  justify-content: right;
+}
+.about-description {
+  font-family: Poppins;
+  display: flex;
+  color: #292929;
+}
+.about-side-header {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 2.7rem;
+  max-height: 2.2rem;
+  color: #292929;
+}
+.big-desc-font {
+  font-size: 1.1rem;
+  width: 85%;
+}
+
+.smol-desc-font {
+  font-size: 0.9rem;
+  width: 70%;
+}
+
+.big-phrase-font {
+  font-size: 1.1rem;
+  width: 90%;
+}
+
+.smol-phrase-font {
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.about-side-header-container {
+  width: 50%;
 }
