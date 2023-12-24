@@ -8,24 +8,24 @@ function Projects() {
       <div className="center about-main-header">PROJECTS</div>
       <div className="center about-description">WEB DEVELOPMENT</div>
       <Row>
-        <Col xs={1} sm={1} md={1} lg={1} xl={8}>
+        <Col xs={24} sm={8} md={8} lg={8} xl={8}>
           <ProjectCard />
         </Col>
-        <Col xs={1} sm={1} md={1} lg={1} xl={8}>
+        <Col xs={24} sm={8} md={8} lg={8} xl={8}>
           <ProjectCard />
         </Col>
-        <Col xs={1} sm={1} md={1} lg={1} xl={8}>
+        <Col xs={24} sm={8} md={8} lg={8} xl={8}>
           <ProjectCard />
         </Col>
       </Row>
       <Row>
-        <Col xs={1} sm={1} md={1} lg={1} xl={8}>
+        <Col xs={24} sm={8} md={8} lg={8} xl={8}>
           <ProjectCard />
         </Col>
-        <Col xs={1} sm={1} md={1} lg={1} xl={8}>
+        <Col xs={24} sm={8} md={8} lg={8} xl={8}>
           <ProjectCard />
         </Col>
-        <Col xs={1} sm={1} md={1} lg={1} xl={8}>
+        <Col xs={24} sm={8} md={8} lg={8} xl={8}>
           <ProjectCard />
         </Col>
       </Row>

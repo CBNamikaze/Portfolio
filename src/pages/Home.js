@@ -1,19 +1,16 @@
 import { Anchor, Col, Row } from "antd";
 import React, { useEffect, useState } from "react";
+import ContactCard from "../components/ContactCard";
 
 function Home() {
   const [isBigScreen, setIsBigScreen] = useState(false);
   useEffect(() => {
     const handleResize = () => {
-      const mediaQuery = window.matchMedia("(min-width: 1200px)");
+      const mediaQuery = window.matchMedia("(min-width: 1500px)");
       setIsBigScreen(mediaQuery.matches);
     };
     handleResize();
-
-    // Listen for window resize events
     window.addEventListener("resize", handleResize);
-
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -52,17 +49,19 @@ function Home() {
         <Col xs={1} sm={1} md={1} lg={1} xl={16} className="job-title">
           FULLSTACK
         </Col>
-        <Col xs={1} sm={1} md={1} lg={1} xl={8} className="name-title">
-          SIBI MUGHIL
-        </Col>
+        {isBigScreen && (
+          <Col xs={1} sm={1} md={1} lg={1} xl={8} className="name-title">
+            SIBI MUGHIL
+          </Col>
+        )}
       </Row>
       <Row>
-        <Col xs={1} sm={1} md={1} lg={1} xl={8} className="job-title"></Col>
+        <Col xs={7} sm={7} md={7} lg={6} xl={8} className="job-title"></Col>
         <Col
-          xs={1}
-          sm={1}
-          md={1}
-          lg={1}
+          xs={17}
+          sm={17}
+          md={17}
+          lg={18}
           xl={16}
           className="job-title title-border"
         >
@@ -70,13 +69,11 @@ function Home() {
         </Col>
       </Row>
       <Row className="home-bottom-row">
-        <Col xs={1} sm={1} md={1} lg={1} xl={12} className="home-anchor">
-          {" "}
+        <Col xs={24} sm={24} md={12} lg={12} xl={12} className="home-anchor">
           <Anchor affix={false} showInkInFixed={false} items={items} />
         </Col>
-        <Col xs={1} sm={1} md={1} lg={1} xl={12} className="home-contact">
-          <div className="contact-container">CONTACT ME</div>
-          <div className="circle" />
+        <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+          <ContactCard circle="#ffaf52" />
         </Col>
       </Row>
     </>
