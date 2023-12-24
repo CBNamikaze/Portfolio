@@ -1,16 +1,17 @@
-import { Col, Row } from "antd";
 import React from "react";
 import Home from "./Home";
-import AboutTop from "./AboutTop";
+import About from "./About";
+import Projects from "./Projects";
 
 function Index() {
   return (
     <div>
       <div className="background-margin">
         <Home />
-      </div>{" "}
+        <About />
+      </div>
       <div className="background-margin">
-        <AboutTop />
+        <Projects />
       </div>
     </div>
   );
